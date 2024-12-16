@@ -1,0 +1,5 @@
+[root@myslonit task_3]# mkfifo /tmp/archive_pipe
+[root@myslonit task_3]# tar czf /tmp/messages_archive.tar.gz -C /var/log messages < /tmp/archive_pipe &
+[1] 85531
+[root@myslonit task_3]# echo "/var/log/messages" > /tmp/archive_pipe
+
