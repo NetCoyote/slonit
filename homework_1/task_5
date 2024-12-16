@@ -1,0 +1,10 @@
+ cat <<EOF > message.txt
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+EOF
