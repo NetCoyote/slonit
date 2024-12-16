@@ -1,0 +1,9 @@
+[root@myslonit homework_1]# mkfifo my_pipe
+[root@myslonit homework_1]# ls
+my_pipe
+[root@myslonit homework_1]# ss -plnt > my_pipe &
+[1] 85257
+[root@myslonit homework_1]# cat my_pipe > output.txt
+[1]+  Done                    ss -plnt > my_pipe
+[root@myslonit homework_1]# 
+
