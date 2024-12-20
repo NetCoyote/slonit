@@ -1,0 +1,46 @@
+Сделал вывод сервиса sshd потому что у systemd-logind небыло 25 строк
+
+
+systemctl status sshd -n 25 
+
+[root@myslonit homework_2]# systemctl status sshd -n 25 ls
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Wed 2024-12-18 17:51:09 UTC; 2 days ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 1044 (sshd)
+    Tasks: 1 (limit: 12292)
+   Memory: 15.4M
+   CGroup: /system.slice/sshd.service
+           └─1044 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,um>
+
+Dec 20 20:18:14 myslonit.local sshd[32369]: Connection reset by invalid user admin 185.147.124.54 port 31146 [preauth]
+Dec 20 20:18:14 myslonit.local sshd[32372]: Invalid user user from 185.147.124.54 port 31156
+Dec 20 20:18:15 myslonit.local sshd[32372]: Connection reset by invalid user user 185.147.124.54 port 31156 [preauth]
+Dec 20 20:18:15 myslonit.local sshd[32375]: Invalid user user from 185.147.124.54 port 31166
+Dec 20 20:18:15 myslonit.local sshd[32375]: Connection reset by invalid user user 185.147.124.54 port 31166 [preauth]
+Dec 20 20:20:26 myslonit.local sshd[32400]: Invalid user hduser from 209.38.35.86 port 52358
+Dec 20 20:20:26 myslonit.local sshd[32400]: Connection closed by invalid user hduser 209.38.35.86 port 52358 [preauth]
+Dec 20 20:22:10 myslonit.local sshd[32430]: Invalid user ubuntu from 154.68.39.6 port 53040
+Dec 20 20:22:10 myslonit.local sshd[32430]: Received disconnect from 154.68.39.6 port 53040:11: Bye Bye [preauth]
+Dec 20 20:22:10 myslonit.local sshd[32430]: Disconnected from invalid user ubuntu 154.68.39.6 port 53040 [preauth]
+Dec 20 20:25:22 myslonit.local sshd[32489]: Invalid user hp from 103.190.91.23 port 40214
+Dec 20 20:25:22 myslonit.local sshd[32489]: Connection closed by invalid user hp 103.190.91.23 port 40214 [preauth]
+Dec 20 20:27:10 myslonit.local sshd[32495]: Invalid user zw from 154.68.39.6 port 44991
+Dec 20 20:27:10 myslonit.local sshd[32495]: Received disconnect from 154.68.39.6 port 44991:11: Bye Bye [preauth]
+Dec 20 20:27:10 myslonit.local sshd[32495]: Disconnected from invalid user zw 154.68.39.6 port 44991 [preauth]
+Dec 20 20:27:24 myslonit.local sshd[32498]: Invalid user hduser from 209.38.35.86 port 52926
+Dec 20 20:27:24 myslonit.local sshd[32498]: Connection closed by invalid user hduser 209.38.35.86 port 52926 [preauth]
+Dec 20 20:28:28 myslonit.local sshd[32504]: Invalid user (any) from 185.147.124.53 port 20056
+Dec 20 20:28:28 myslonit.local sshd[32504]: Connection reset by invalid user (any) 185.147.124.53 port 20056 [preauth]Unit ls.service could not be found.
+
+Dec 20 20:28:28 myslonit.local sshd[32507]: Invalid user fwadmin from 185.147.124.53 port 20070
+Dec 20 20:28:28 myslonit.local sshd[32507]: Connection reset by invalid user fwadmin 185.147.124.53 port 20070 [preauth]
+Dec 20 20:28:28 myslonit.local sshd[32510]: Invalid user SYSMAINT from 185.147.124.53 port 20086
+Dec 20 20:28:28 myslonit.local sshd[32510]: Connection reset by invalid user SYSMAINT 185.147.124.53 port 20086 [preauth]
+Dec 20 20:28:28 myslonit.local sshd[32516]: Invalid user dos from 185.147.124.53 port 20106
+Dec 20 20:28:28 myslonit.local sshd[32516]: Connection reset by invalid user dos 185.147.124.53 port 20106 [preauth]
+lines 1-37/37 (END)
+
+=========================================================
