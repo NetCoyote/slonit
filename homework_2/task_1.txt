@@ -1,4 +1,4 @@
-
+Билебирда изза того что бинарник
 
 [root@myslonit ~]# tail -7 /var/log/wtmp 
 [tty1tty1[��`g�t�`g�/&ty�tty1tty1���`gE�own5.4.1�tty1tty1LOGIN���`gE�.x�tty1tty1�T�`gMeb�tty1tty1�T�`g�T10.7.1.e�tty1tty1LOGIN�T�`g�T~ru/pts/0ts/0root77.140.255.182ӄ`g��x86_64j�`gC�ZttyS0tyS0Zk�`g�&
