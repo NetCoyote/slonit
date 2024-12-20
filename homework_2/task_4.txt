@@ -1,0 +1,9 @@
+в /etc/rsyslog.d/ добавить файл с .conf
+
+vim /etc/rsyslog.d/slonit.conf
+*.info /var/log/my.log
+
+
+перезагрузить сервис 
+sudo systemctl restart rsyslog
+
