@@ -1,0 +1,4 @@
+journalctl -b
+
+journalctl -b --since "1 hour ago"
+
