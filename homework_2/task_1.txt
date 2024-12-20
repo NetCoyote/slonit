@@ -1,0 +1,45 @@
+
+
+[root@myslonit ~]# tail -7 /var/log/wtmp 
+[tty1tty1[��`g�t�`g�/&ty�tty1tty1���`gE�own5.4.1�tty1tty1LOGIN���`gE�.x�tty1tty1�T�`gMeb�tty1tty1�T�`g�T10.7.1.e�tty1tty1LOGIN�T�`g�T~ru/pts/0ts/0root77.140.255.182ӄ`g��x86_64j�`gC�ZttyS0tyS0Zk�`g�&
+M��/pts/0}�`g
+             �}pts/0ts/0root77.140.255.182h�ag�u        M���}pts/0��agQ��pts/0ts/0root77.140.255.182�   cgu�M���pts/0p
+                                                                                                                      cg�+
+                                                                                                                         ZttyS0tyS0Zq
+                                                                                                                                     cgs�tty1tty1�q
+                                                                                                                                                   cg�~~~shutdown5.4.17-2136.310.7.1.el8uek.x86_64q
+                                                                                                                                                                                                   cg��
+                                                                                                                                                                                                       ~~~reboot5.4.17-2136.337.5.1.el8uek.x86_64|
+          cg�G3~~~runlevel5.4.17-2136.337.5.1.el8uek.x86_64�
+                                                            cg�,DttyS0tyS0D�
+                                                                            cg��
+                                                                                Etty1tty1E�
+                                                                                           cg_�
+                                                                                               DttyS0tyS0LOGIND�
+                                                                                                                cg��
+                                                                                                                    Etty1tty1LOGINE�
+                                                                                                                                    cg_�
+                                                                                                                                        [pts/0ts/0root77.140.255.182�
+                                                                                                                                                                     cgy�
+                                                                                                                                                                         M��[pts/0�
+                                                                                                                                                                                   cg��pts/0ts/0root77.140.255.182�
+                                                                                                                                                                                                                   cg�M���pts/0�
+                                                                                                                                                                                                                                cgM
+                                                                                                                                                                                                                                   �upts/0ts/0root77.140.255.182��eg\�M���upts/0��eg#�                                                                                    ���|pts/0��eg��}pts/0ts/0root77.140.255.182��egJM���[root@myslonit ~]# 
+                                              �{pts/0ts/0root77.140.255.182��eg3eM���{pts/0��eg��|pts/0ts/0root77.140.255.182��eg-
+
+
+
+==================================================================================================
+
+[root@myslonit homework_2]# last | tail -7
+reboot   system boot  5.4.17-2136.337. Wed Dec 18 17:50   still running
+root     pts/0        77.140.255.182   Wed Dec 18 17:42 - 17:50  (00:07)
+root     pts/0        77.140.255.182   Tue Dec 17 14:36 - 14:37  (00:00)
+root     pts/0        77.140.255.182   Mon Dec 16 19:51 - 23:32  (03:40)
+reboot   system boot  5.4.17-2136.310. Mon Dec 16 19:32 - 17:50 (1+22:17)
+
+wtmp begins Wed Sep 21 08:11:39 2022
+[root@myslonit homework_2]# 
+
+
