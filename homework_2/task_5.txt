@@ -1,0 +1,24 @@
+создать правило и перезагрузить сервис
+vim /etc/rsyslog.d/slonit_ssh.conf
+authpriv.* /var/log/ssh.log
+sudo systemctl restart rsyslog
+
+=================
+
+создать конфиг для ротации 
+
+vim /etc/logrotate.d/slonit_log
+
+/var/log/ssh.log {
+    daily
+    rotate 10
+    size 1M
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 640 syslog adm
+}
+
+
+
